@@ -53,5 +53,5 @@ wget https://raw.githubusercontent.com/maxxcan/spartan-arch/master/chroot-instal
 arch-chroot /mnt /bin/bash ./chroot-install.sh $user $password $fast
 
 # reboot
-umount /mnt
-reboot
+# umount /mnt
+# reboot
