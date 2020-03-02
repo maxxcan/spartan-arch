@@ -32,17 +32,17 @@ echo 'LANG=es_ES.UTF-8' > /etc/locale.conf
 
 # setup hostname
 echo 'Setting up hostname'
-echo 'arch-virtualbox' > /etc/hostname
+echo 'arch-linux' > /etc/hostname
 
 # build
 echo 'Building'
 mkinitcpio -p linux
 
 # install bootloader
-echo 'Installing bootloader'
-pacman -S grub --noconfirm
-grub-install --target=i386-pc /dev/vda
-grub-mkconfig -o /boot/grub/grub.cfg
+# echo 'Installing bootloader'
+# pacman -S grub --noconfirm
+# grub-install --target=i386-pc /dev/vda
+# grub-mkconfig -o /boot/grub/grub.cfg
 
 # install Xorg
 # echo 'Installing Xorg'
