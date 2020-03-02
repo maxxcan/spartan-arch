@@ -45,8 +45,8 @@ grub-install --target=i386-pc /dev/vda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # install Xorg
-echo 'Installing Xorg'
-pacman -S --noconfirm xorg xorg-xinit xterm
+# echo 'Installing Xorg'
+# pacman -S --noconfirm xorg xorg-xinit xterm
 
 # install virtualbox guest modules
 #echo 'Installing VB-guest-modules'
