@@ -50,7 +50,7 @@ echo "workspace /home/$user/workspace vboxsf uid=$user,gid=wheel,rw,dmode=700,fm
 
 # chroot
 wget https://raw.githubusercontent.com/maxxcan/spartan-arch/master/chroot-install.sh -O /mnt/chroot-install.sh
-arch-chroot /mnt /bin/bash ./chroot-install.sh $user $password $fast
+#arch-chroot /mnt /bin/bash ./chroot-install.sh $user $password $fast
 
 # reboot
 # umount /mnt
