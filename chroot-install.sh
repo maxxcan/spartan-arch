@@ -20,15 +20,15 @@ fi
 # setup timezone
 echo 'Setting up timezone'
 timedatectl set-ntp true
-ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
-timedatectl set-timezone America/New_York
+ln -s /usr/share/zoneinfo/Europe/Madrid /etc/localtime
+timedatectl set-timezone Europe/Madrid
 hwclock --systohc
 
 # setup locale
 echo 'Setting up locale'
-sed -i 's/^#en_US.UTF-8/en_US.UTF-8/' /etc/locale.gen
+sed -i 's/^#en_US.UTF-8/es_ES.UTF-8/' /etc/locale.gen
 locale-gen
-echo 'LANG=en_US.UTF-8' > /etc/locale.conf
+echo 'LANG=es_ES.UTF-8' > /etc/locale.conf
 
 # setup hostname
 echo 'Setting up hostname'
