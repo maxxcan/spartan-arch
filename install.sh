@@ -34,11 +34,11 @@ fi
 timedatectl set-ntp true
 
 #partiton disk
-parted --script /dev/sda mklabel msdos mkpart primary ext4 0% 87% mkpart primary linux-swap 87% 100%
-mkfs.ext4 /dev/sda1
-mkswap /dev/sda2
-swapon /dev/sda2
-mount /dev/sda1 /mnt
+parted --script /dev/vda mklabel msdos mkpart primary ext4 0% 87% mkpart primary linux-swap 87% 100%
+mkfs.ext4 /dev/vda1
+mkswap /dev/vda2
+swapon /dev/vda2
+mount /dev/vda1 /mnt
 
 # pacstrap
 pacstrap /mnt base
